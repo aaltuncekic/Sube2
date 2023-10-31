@@ -1,0 +1,26 @@
+/* STYLE KULLANIM */
+
+/* BELİRTİLEN TÜM  ETİKLER İÇİN GEÇERLi OLUR */
+body{
+    font-size: 25px;
+}
+p{
+    color:red
+}
+/* CLASS veya ID*/
+/* class . ile Id # ile tanımlanır*/
+/*CLASS*/
+.mavi{
+    color: blue;
+    font-size: 64px;
+}
+.kirmizi{
+    color: red;
+    font-size: 12px;
+}
+
+/* ID */
+
+#kirmizi{
+    color: green;
+}
