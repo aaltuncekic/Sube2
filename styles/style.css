@@ -24,3 +24,61 @@ p{
 #kirmizi{
     color: green;
 }
+
+/*GENEL ÖZELLİKLER*/
+/*Genişlik => width*/
+/*Yükseklik => height*/
+.genel{
+    border: 1px solid red;
+    width: 250px; /*Sabit Genişlik*/
+    width: 50%; /* Sayfa çözünürlüğüne göre */
+
+    height: 50px; /*Sabit Yükseklik*/
+    height: 50%; /* Sayfa çözünürlüğüne  ve bir üst etikete göre */
+    /* height: 50vh; Sayfa çözünürlüğüne göre */
+
+}
+
+.genel1{
+    border: 1px solid red;
+    width: 50%; /* Sayfa çözünürlüğüne göre */
+}
+
+    /*MARGIN & PADDING*/
+    /*Margin dış çeperden hizalama*/
+
+.mrg{
+    border:1px solid blue;
+   
+    margin:15px;
+
+    margin-top: 50px;
+    margin-right: 105px;
+    margin-bottom: 75px;
+    margin-left: 0;
+
+    margin:20px 40px 80px 120px;
+
+    margin:50px 25px;
+
+}
+
+    /*Padding iç çeperden hizalama*/
+
+    .pdd{
+        border:1px solid blue;
+        margin:10px;
+
+        padding:50px;
+        padding-top: 50px;
+        padding-right: 105px;
+        padding-bottom: 75px;
+        padding-left: 0;
+
+        padding:20px 40px 80px 120px;
+
+        padding:50px 25px;
+
+    }
+
+
