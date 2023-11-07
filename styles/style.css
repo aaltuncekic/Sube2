@@ -81,4 +81,51 @@ p{
 
     }
 
+.anaDiv{
+    background-color: aqua;
+    color:brown;
+    padding-top:25px;
+    padding-left:15px;
+    padding-bottom:45px;
 
+    font-size: 64px;
+}
+
+.altDiv{
+    background-color: black;
+    padding-top:25px;
+    padding-bottom:45px;
+
+    font-size:32px;
+}
+
+.text{
+    font-size:45px;
+    font-weight:600;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+
+    text-align: right;
+    text-decoration: underline double;
+    text-decoration: overline dotted azure;
+
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+.background{
+    height: 240px;
+    width: 240px;
+    background-color: bisque;
+    background-image: url('../images/gazi.png');
+    background-position: bottom left;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: 50%; */
+    background-size: cover;
+    background-size: contain;
+    
+    background: center/contain  blue no-repeat url('../images/gazi.png');
+    background:  red  url("../images/gazi.png") 100%/100% no-repeat
+}
