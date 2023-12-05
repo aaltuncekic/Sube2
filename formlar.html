@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Formlar</title>
+    </head>
+    <body>
+        <form  method="get" 
+        >
+            <div>
+                Ad<input 
+                type="text" 
+                name="ad"
+                placeholder="Lütfen Adınızı Giriniz"
+                value="" 
+                required/>
+            </div>
+            <div>
+                Soyad<input 
+                type="text" 
+                name="soyad" 
+                placeholder="Lütfen Soyadınızı Giriniz"
+                value="ALTUNÇEKİÇ"
+                readonly
+                />
+            </div>
+            <div>
+                Yaş <input
+                type="number"
+                min="10"
+                max="100"
+                step="5"
+                name="yas"
+                />
+            </div>
+            <div>
+                Eposta<input 
+                type="email"
+                name="email"
+                required />
+            </div>
+            <div>
+                Şifre
+                <input type="password"
+                name="sifre"
+                required
+                />
+            </div>
+            <input type="date" name="dogumtarihi" />
+            <input type="datetime-local" name="dogumtarihi" />
+
+            <input type="file" name="profilresmi" />
+
+            <div>
+            <textarea name="biyografi" rows="10" cols="50">
+            </textarea>
+            </div>
+            <div>
+                <select name="sinif" required>
+                    <option value="">Seçiniz</option>
+                    <option value="1">1. Sınıf</option>
+                    <option value="2" selected>2. Sınıf</option>
+                    <option value="3">3. Sınıf</option>
+                    <option value="4">4. Sınıf</option>
+                </select>
+            </div>
+
+            <div>
+               Onay <input checked type="checkbox" name="onay" value="1" />
+            </div>
+
+            <div>
+                <input  type="radio" name="cinsiyet" value="kadin">Kadın
+                <input checked type="radio" name="cinsiyet" value="erkek">Erkek
+            </div>
+
+            <input type="tel" name="telefon"  />
+            <div>
+                <input type="reset" value="Sıfırla" />
+                <input type="color" />
+                <input type="hidden" name="kullaniciId" value="1232321" />
+                <button>Gönder</button>
+                <input type="submit" value="Kaydet" /> 
+            </div>
+            
+        </form>
+    </body>
+</html>
