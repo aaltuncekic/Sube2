@@ -1,0 +1,112 @@
+<html>
+    <head><title>Temel JS</title></head>
+    <body>
+        <form>
+            <input type="number" name="deger1" id="deger1"/> X
+            <input type="number" name="deger2" id="deger2" />
+            <a  onclick="carpma()" />HESAPLA</a>
+            <div id="sonuc"></div>
+        </form>
+
+        <div>
+            <form>
+            <input type="number" name="deger1" id="val1"/> 
+            <select id="islem">
+                <option value="1">Çarp</option>
+                <option value="2">Böl</option>
+                <option value="3">Topla</option>
+                <option value="4">Çıkar</option>
+                <option value="5">Kalan</option>
+            </select>
+            <input type="number" name="deger2" id="val2" />
+            <a  onclick="hesapla()" />HESAPLA</a>
+            <div id="sonuc1"></div>
+        </form>
+           
+            
+        </div>
+        <div>
+            <input type="number" name="deger1" id="val1" onchange="fonk1(this.value)"/> 
+            <input type="number" name="deger1" id="val1" onchange="fonk2(this.value)"/> 
+        </div>
+ 
+        <script>
+
+            function fonk1(deger){
+                alert("Birinci Değer"+deger)
+            }
+
+            function fonk2(deger){
+                alert("ikinci değer "+deger)
+            }
+
+            function hesapla(){
+                var val1 = Number(document.getElementById("val1").value)
+                var val2 = Number(document.getElementById("val2").value)
+                var islem = Number(document.getElementById("islem").value)
+
+                var sonuc =0;
+
+                if(islem==1){//Çarpma
+                    sonuc = val1*val2;
+                }
+                else if(islem==2){//Bölme
+                    sonuc = val1/val2
+                }
+                else if(islem==3){//TOPLAMA
+                    sonuc = val1+val2
+                }
+                else if(islem==4){
+                    sonuc=val1-val2
+                }
+                else {//ÇIKARTMA
+                    alert("tanımsız istek")
+                }   
+                sonucYazdir(sonuc)
+            }
+
+            function sonucYazdir(sonuc){
+                var sonucYazdir = document.getElementById("sonuc1").innerHTML="<b>Sonuç: "+sonuc+"</b>"
+
+            }
+
+            //Fonksiyon başlama
+            function carpma(deger1=1,deger2=1){
+                var deg1 = document.getElementById("deger1").value //Değişken
+                var deg2 = document.getElementById("deger2").value //Değişken
+                var sonuc = deg1*deg2;
+
+                document.getElementById("sonuc").innerHTML="<b>Sonuç: "+sonuc+"</b>"
+
+                // alert(document.getElementById("sonuc").innerHTML)
+                console.log("SONUÇ",sonuc)
+                // alert(deg1*deg2)
+
+                console.log("Değer1",deg1)
+                console.log("Değer2",deg2)
+            }
+            //Fonksiyon Bitiş
+            /*
+                Fonksiyonu çağırma
+                carpma(deger1,deger);
+            */
+
+            // merhabaFonksiyonu();
+             //parametrik()
+            // parametrik("Naber")
+
+           // carpma("5",6)
+
+            function merhabaFonksiyonu()
+            {
+                alert("Merhaba")
+            }
+            function parametrik(deger=""){
+                alert(deger)
+            }
+
+           
+            // alert("Merhaba Dünya")
+        </script>
+    </body>
+</html>
