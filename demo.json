@@ -1,0 +1,34 @@
+{
+    "ogrenciler":[
+        {
+            "id":1,
+            "name":"Alper",
+            "lastName":"ALTUNÇEKİÇ",
+            "email":"aaa@aaa",
+            "ogrenim":[
+                {
+                    "id":1,
+                    "okul":"İlk"
+                },
+                {
+                    "id":2,
+                    "okul":"Orta"
+                },
+                {
+                    "id":3,
+                    "okul":"Lise",
+                    "diploma":"Evet"
+                }
+            ]
+        },
+        {
+            "id":2,
+            "name":"Alper",
+            "lastName":"ALTUNÇEKİÇ",
+            "email":"aaa@aaa"
+        }
+
+    ]
+   
+}
+

@@ -1,0 +1,88 @@
+<html>
+    <head><title>JS For</title></head>
+    <body>
+
+        <div id="degis"></div>
+
+        <div id="arr"></div>
+
+        <script>
+            var degisken ="Merhaba";
+            document.getElementById("degis").innerHTML=degisken
+            
+
+            console.log(degisken)
+            var listeDegisken = ["A1","A2","A3"]
+
+            var listeUzunlugu = listeDegisken.length
+            // alert(listeUzunlugu)
+            // alert(listeDegisken[0])
+            document.getElementById("arr").innerHTML = `
+                <p>1. Eleman: ${listeDegisken[0]}</p>
+                <p>2. Eleman: ${listeDegisken[1]}</p>
+                <p>3. Eleman: ${listeDegisken[2]}</p>
+            `
+
+            for(i=listeDegisken.length-1; i>=0;i--){
+                document.getElementById("arr").innerHTML += `
+                <p>${i+1}. Eleman: ${listeDegisken[i]}</p>
+            `
+            }
+
+            for(i=0; i<listeDegisken.length;i++){
+                document.getElementById("arr").innerHTML += `
+                <p>${i+1}. Eleman: ${listeDegisken[i]}</p>
+            `
+            }
+
+            //FOR
+            for(
+                var i=0; i<=100; i++
+            ){
+                console.log(i)
+                document.getElementById("arr").innerHTML +=`
+                    <p>Sayı ${i}</p>
+                `
+            }
+
+            for(
+                var i=100; i>0; i--
+            ){
+                console.log(i)
+                document.getElementById("arr").innerHTML +=`
+                    <p>Sayı ${i}</p>
+                `
+            }
+
+
+
+            // document.getElementById("arr").innerHTML=listeDegisken
+            
+
+            console.log(listeDegisken)
+
+/*
+listeDegisken = [
+                {
+                    a:1,
+                    b:"Test"
+                },{
+                    a:2,
+                    b:"Test2"
+                },
+                {
+                    a:3,
+                    b:"Test3"
+                }
+            ]
+*/
+
+
+        </script>
+
+
+
+
+
+    </body>
+</html>
